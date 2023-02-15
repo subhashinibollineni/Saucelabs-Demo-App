@@ -1,0 +1,18 @@
+{
+  "name": "saucelabsautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "test1": "npm run test"
+  },
+  "author": "subhashinibollineni",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.5.1"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1"
+  }
+}
