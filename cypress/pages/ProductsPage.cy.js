@@ -20,6 +20,9 @@ class ProductsPage {
         this.getSauceBikeLight().click()
         this.getCartButton().click()
     }
+    verifyProductsPageNavigation() {
+        cy.get(buttonCart).should('be.visible')
+    }
     verifyBackToHome(expectedText) {
         cy.get(this.title).should('have.text', expectedText)
     }
