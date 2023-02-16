@@ -5,7 +5,7 @@ import CheckOutYourInformationPage from "../../pages/CheckOutYourInformationPage
 import CheckOutOverviewPage from "../../pages/CheckOutOverviewPage.cy";
 import CheckOutCompletePage from "../../pages/CheckOutCompletePage.cy";
 
-describe("Verify Products In Cart", () => {
+describe("Verify Back to home navigation test", () => {
 
     let loginData
     let checkOutYourInformationData
@@ -31,7 +31,7 @@ describe("Verify Products In Cart", () => {
         })
     })
 
-    it("Checkout Test", () => {
+    it("Back to home Test", () => {
         let loginPage = new LoginPage();
         loginPage.login(loginData.username, loginData.password)
         let productsPage = new ProductsPage();

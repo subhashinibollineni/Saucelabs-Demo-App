@@ -16,7 +16,7 @@ describe("Verify Products In Cart", () => {
         })
     })
 
-    it("YourCart Test", () => {
+    it("Verify Products Test", () => {
         let loginPage = new LoginPage();
         loginPage.login(loginData.username, loginData.password)
         let productsPage = new ProductsPage();

@@ -4,7 +4,7 @@ import YourCartPage from "../../pages/YourCartPage.cy";
 import CheckOutYourInformationPage from "../../pages/CheckOutYourInformationPage.cy";
 import CheckOutOverviewPage from "../../pages/CheckOutOverviewPage.cy";
 
-describe("Verify Products In Cart", () => {
+describe("Verify checkout overview test", () => {
 
     let loginData
     let checkOutYourInformationData
