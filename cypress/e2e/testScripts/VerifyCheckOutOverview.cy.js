@@ -36,4 +36,9 @@ describe("Verify checkout overview test", () => {
         checkOutOverviewPage.verifyEachProductPrice(checkOutOverviewData.firstproductprice, checkOutOverviewData.secondproductprice)
         checkOutOverviewPage.verifyTotalPriceOfProducts(checkOutOverviewData.totalpriceofproducts)
     })
+
+    after(() => {
+        cy.performLogout()
+        cy.verifyLogOutSuccess()
+    })
 })

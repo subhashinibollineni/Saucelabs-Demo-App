@@ -25,4 +25,9 @@ describe("Verify Products In Cart", () => {
         yourCart.validateFirstProductInCart(productsData.expectedfirstproduct)
         yourCart.validateSecondProductInCart(productsData.expectedsecondproduct)
     })
+    
+    after(() => {
+        cy.performLogout()
+        cy.verifyLogOutSuccess()
+    })
 })

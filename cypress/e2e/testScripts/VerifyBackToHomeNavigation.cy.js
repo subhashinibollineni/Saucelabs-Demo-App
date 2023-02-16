@@ -47,4 +47,9 @@ describe("Verify Back to home navigation test", () => {
         checkOutCompletePage.clickBackToHome()
         productsPage.verifyBackToHome(productsData.expectedtitle)
     })
+
+    after(() => {
+        cy.performLogout()
+        cy.verifyLogOutSuccess()
+    })
 })

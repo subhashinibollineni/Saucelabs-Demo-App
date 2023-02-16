@@ -17,4 +17,9 @@ describe("Verify Login to saucelabs", () => {
         let productsPage = new ProductsPage();
         productsPage.verifyProductsPageNavigation()
     })
+    
+    after(() => {
+        cy.performLogout()
+        cy.verifyLogOutSuccess()
+    })
 })

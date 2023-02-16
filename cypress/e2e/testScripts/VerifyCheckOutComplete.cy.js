@@ -41,4 +41,9 @@ describe("Verify checkout complete test", () => {
         let checkOutCompletePage = new CheckOutCompletePage()
         checkOutCompletePage.checkOutCompleteVerify(checkOutCompleteData.expectedtext)
     })
+
+    after(() => {
+        cy.performLogout()
+        cy.verifyLogOutSuccess()
+    })
 })

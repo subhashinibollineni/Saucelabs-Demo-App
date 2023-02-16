@@ -26,8 +26,8 @@ class CheckOutOverviewPage {
       })
   }
 
-  verifyTotalPriceOfProducts() {
-    cy.get(this.totalPrice).should('have.contain', '$43.18')
+  verifyTotalPriceOfProducts(expectedTotalPrice) {
+    cy.get(this.totalPrice).should('have.contain', expectedTotalPrice)
   }
 
   clickFinishButton() {
